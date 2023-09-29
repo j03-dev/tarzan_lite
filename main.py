@@ -38,9 +38,10 @@ def ml_detect(img, digits: list[np.ndarray]) -> int:
     digit = -1
     for i, d in enumerate(digits):
         scaled_img = cv2.resize(img, d.shape[:2][::-1])
-
+    
+        
         bitwise = cv2.bitwise_and(d, cv2.bitwise_xor(scaled_img, d))
-
+        
         before = np.sum(d == 255)
         matching = 100 - (np.sum(bitwise == 255) / before * 100)
 

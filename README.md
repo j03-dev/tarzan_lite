@@ -16,13 +16,13 @@ python -m pip install -r requirement.txt
 the option `dl` mean you use `deep learning` for the recognition <br>
 `ml` option is also exist mean use `machine learning`
 
-#### Deep learning
+#### Deep learning using `CNN`
 
 ```bash
 python main.py --image image_test.jpg --option dl
 ```
 
-#### Machine learning algo
+#### Machine learning algo using `XOR and AND`
 
 ```bash
 python main.py --image image_test.jpg --option ml
